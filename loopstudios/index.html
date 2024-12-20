@@ -7,6 +7,7 @@
 
     <!-- styles -->
      <link rel="stylesheet" href="./assets/css/main.css">
+     <link rel="stylesheet" href="./assets/css/mediaquries.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +25,15 @@
                 </div>
 
                 <nav class="navbar-nav" aria-label="Header nav">
+
+                    <div class="mobile-navbar-brand">
+                        <a href="#"><img src="./assets/images/logo.svg" alt=""></a>
+
+                        <div id="close-btn">
+                            <img src="./assets/images/icon-close.svg" alt="">
+                        </div>
+                    </div>
+
                     <ul>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Careers</a></li>
@@ -32,6 +42,10 @@
                         <li><a href="#">Support</a></li>
                     </ul>
                 </nav>
+
+                <div class="nav-toggler" id="open-btn">
+                    <img src="./assets/images//icon-hamburger.svg" alt="">
+                </div>
             </div>
 
             <section class="banner">
@@ -57,7 +71,7 @@
                 </div>
              </section>
 
-             <!-- product section -->
+            <!-- product section -->
               <section class="product" id="product">
                 <h2>Our Creations</h2>
                 <div class="product-grid">
@@ -136,6 +150,45 @@
 
                 <a href="#" class="btn-primary">SEE ALL</a>
               </section>
+
+            <!-- footer -->
+              <footer>
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </div>
+
+                    <nav class="footer-nav" aria-label="footer-nav">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="#">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+                    </div>
+
+                    <p class="copyright">&copy; 2024 loopstudios. All rights reserved.</p>
+                </div>
+
+              </footer>       
         </main>
     </div>
 

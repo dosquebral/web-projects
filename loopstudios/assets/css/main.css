@@ -49,6 +49,11 @@ header {
     margin-bottom: 120px;
 }
 
+.mobile-navbar-brand {
+    display: none;
+    cursor: pointer;
+}
+
 nav ul {
     display: grid;
     grid-template-columns: repeat(5, minmax(min-content, min-content));
@@ -70,6 +75,11 @@ nav ul li::after {
 }
 
 nav ul li:hover::after {width: 25px;}
+
+.nav-toggler {
+    display: none;
+    cursor: pointer;
+}
 
 .banner h1 {
     max-width: 650px;
@@ -172,4 +182,40 @@ nav ul li:hover::after {width: 25px;}
 .btn-primary:hover {
     background: var(--black);
     color: var(--white);
+}
+
+footer {
+    background: var(--black);
+    padding: 45px var(--px);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-brand {
+    margin-bottom: 20px;
+}
+
+footer .footer-brand img {
+    max-width: 140px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.social-links a:not(:last-child) {
+    margin-right: 12px;
+}
+
+.copyright {
+    color: var(--very-dark-gray);
 }
