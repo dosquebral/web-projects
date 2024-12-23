@@ -1,0 +1,133 @@
+:root {
+    --cyan: hsl(171, 66%, 44%);
+    --blue:  hsl(233, 100%, 69%);
+    --btn-border-cyan: hsl(171, 66%, 36%);
+    --btn-border-blue: hsl(233, 100%, 65%);
+    --btn-shadow-cyan: hsla(171, 66%, 36%, 0.5);
+    --btn-shadow-blue: hsla(233, 100%, 65%, 0.5);
+    --footer-bg: hsl(220, 18%, 97%);
+
+    --neutral-dark-blue: hsl(210, 10%, 33%);
+    --neutral-dark-blue50: hsl(210, 10%, 50%);
+    --neutral-blue: hsl(201, 11%, 66%);
+
+    --fs-h1: 45px;
+    --fs-h2: 35px;
+    --fs-h3: 23px;
+    --fs-p-lg: 20px;
+    --fs-p-md: 18px;
+    --fs-p-sm: 16px;
+    --fs-btn: 18px;
+
+    --font-family: 'Bai Jamjuree', sans-serif;
+
+    --section-padding: 160px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-family);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+:is(h1, h2, h3) {
+    color: var(--neutral-dark-blue);
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+p {
+    color: var(--neutral-dark-blue50);
+    font-size: var(--fs-p-md);
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: url(./images/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+    padding: 130px var(--section-padding) 75px;
+}
+
+.header-logo{
+    display: block;
+    margin: auto;
+    margin-bottom: 55px;
+}
+
+:is(header) > p {
+    max-width: 690px;
+    margin: auto;
+    text-align: center;
+}
+
+header > p {
+    font-size: var(--fs-p-lg);
+    margin-bottom: 50px !important;
+    line-height: 1.5;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+.btn-group .btn {
+    font-size: var(--fs-btn);
+    letter-spacing: 1px;
+    font-weight: 500px;
+    padding: 15px 35px;
+    color: white;
+    border-radius: 4em;
+    border-bottom: 4px solid;
+    cursor: pointer;
+}
+
+.btn-group .btn:hover {
+    opacity: 0.9;
+}
+
+.btn-group .btn:focus {
+    outline: 3px dotted #0005;
+    outline-offset: 5px;
+}
+
+.btn-group .btn-primary {
+    background-color: var(--cyan);
+    border-color: var(--btn-border-cyan);
+    box-shadow: 0 10px 30px -5px var(--btn-shadow-cyan);
+    margin-right: 10px;
+}
+
+.btn-group .btn-secondary {
+    background-color: var(--blue);
+    border-color: var(--btn-border-blue);
+    box-shadow: 0 10px 30px -5px var(--btn-shadow-blue);
+}
